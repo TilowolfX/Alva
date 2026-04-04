@@ -1,19 +1,119 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Arquitectura</title>
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arquitectura</title>
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <h1> <img src="/assets/img/Control/icocontrol.png" alt="">Control de dispositivos</h1>
+  <p>La gestión de periféricos y componentes internos es fundamental en cuaquier sisteme operativo. Aprende cómo el
+    kernel interactúa con el hardware a través de controladores y archivos de dispositivos especiales.</p>
+  <section id="Control" class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3><img src="/assets/img/Control/icodrivers.jpg" alt="">Driver (Controladores) </h3>
+          <p>Los controladores actúan como traductores entre el sistema operativo y el hardware. Sin ellos el kernel no
+            sabría cómo enviar comandos especificos a una impresora o tarjeta grafica. En sistemas modernos, muchos
+            vienen integrados directamente.</p>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  /DEV
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">/dev es el directorio en Linux que contiene archivos especiales para acceder
+                  a los dispositivos de hardware.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  uDEV
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">udev es el gestor de dispositivos que crea o elimina estos archivos
+                  dinámicamente en /dev, gestiona eventos de "hotplug" (conectar/desconectar hardware) y carga
+                  controladores. Permite reglas personalizadas para nombrar y asignar permisos a dispositivos.
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>>_ Ejemplos de comandos</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Listar dispositivos usb</h5>
+                    <p class="card-text">lsusb.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Ver dispositivos de bloque</h5>
+                    <p class="card-text">lsblk.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Informacion del kernel</h5>
+                    <p class="card-text">dmesg | tail -n20</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Listar buses PCI</h5>
+                    <p class="card-text">lspci -v</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="/assets/img/Control/imagen controldispositivo.webp" alt="">
+        </div>
+        <h3>Regla udev personalziada</h3>
+        <p>Ejemplo para montar automaticamente un disco espesifico:</p>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">/etc/udev/rules.d/99-custom.rules</h5>
+            <p class="card-text">KERNEL=="sdb1", SYMLINK+="backup_drive", MODE="0660", GROUP="storage"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
 
 
 
 
 
-  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+
 </html>
