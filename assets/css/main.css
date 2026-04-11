@@ -1,8 +1,23 @@
 :root{
     --bg-primary-blue:#0D384B;
+    --secundary-color:#005f73
+    
 }
 
 .bg-primary-blue{
     background-color: #0D384B;
 }
+
+.btn {
+    background-color: var(--bg-primary-blue);
+    color: #fff;
+}
+
+.btn {
+    background-color: var(--secundary-color);
+
+}
+
+
+
 
