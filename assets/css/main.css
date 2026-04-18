@@ -13,8 +13,9 @@
     color: #fff;
 }
 
-.btn {
+.btn:hover{
     background-color: var(--secundary-color);
+    color: #fff;
 
 }
 
