@@ -19,6 +19,11 @@
 
 }
 
+#cards .card{
+    max-width: 1320px;
+    height: 480px;
+}
+   
 
 
 
