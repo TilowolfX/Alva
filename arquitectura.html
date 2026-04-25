@@ -10,19 +10,49 @@
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
-
+      <a class="navbar-brand" href="#">Linux</a>
+      <img src="assets/img/Inicio/linux_logo.webp" class="img-fluid" alt="logo" width="5%">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Introduccion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/gestion.html">Gestion de procesos</a></li>
+              <li><a class="dropdown-item" href="/memoria.html">Gestion de memoria</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gestion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/introduccion.html">Introduccion sl sistema operativo</a></li>
+              <li><a class="dropdown-item" href="/arquitectura.html">Arquitectura del sistema operativo</a></li>
+              <li><a class="dropdown-item" href="/archivos.html">Sistema de archivos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/seguridad.html">Seguridad del sistema</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/comparacion.html">Comparacion con otros SO</a>
+          </li>
         </ul>
-
-        <a href="/index.html">
-          <button class="btn btn-danger" type="submit">Regresar...</button>
-        </a>
       </div>
     </div>
   </nav>
+
   <h1> <img src="/assets/img/arquitectura/iconoarquitectura.webp" alt="iconoarquitectura">Arquitectura Del Sistema</h1>
   <section id="arquitectura" class="container">
     <div>
@@ -30,17 +60,16 @@
       <p>Linux organiza el software en dos mundos principales para garantizar la seguridad y estabilidad.</p>
       <p><img src="/assets/img/arquitectura/p.webp" alt=""> User Space: Donde viven tus aplicaciones
         (Navegador, Terminal,Juegos,Wps office). Tienen acceso limitado por seguridad</p>
-      <p><img src="/assets/img/arquitectura/p.webp" alt="">Kernel Space: Donde vive el nucleo. Tiene el control total sobre la CPU, la Ram y los discos.</p>
-      
+      <p><img src="/assets/img/arquitectura/p.webp" alt="">Kernel Space: Donde vive el nucleo. Tiene el control total
+        sobre la CPU, la Ram y los discos.</p>
+
       <img src="/assets/img/arquitectura/Arquitecturadelsistema.webp" alt="">
     </div>
   </section>
+
+
+  <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
-
-
-
-
-
-<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
 
 </html>
