@@ -67,18 +67,18 @@
     </div>
     <img src="/assets/img/memoria/gestionram1.webp" alt="">
   </section>
-  <section id="memoria" class="container">
-    <div class="container text-center">
+  <section id="memoria" class="container-fluid">
+    <div class="container-fluid text-center">
       <div class="row">
         <div class="col">
-          Memoria Virtual y Caché:
+          <h4>Memoria Virtual y Caché:</h4>
           <p class="text-start">
             Linux utiliza todo el espacio RAM disponible. Si hay RAM libre, la usa para caché (buffer/cache) para
             acelerar la lectura de archivos. Esta caché se libera inmediatamente si un programa necesita RAM física.
           </p>
         </div>
         <div class="col">
-          Paginación y Intercambio (Swap):
+          <h4>Paginación y Intercambio (Swap):</h4>
           <p class="text-start">
             La gestión se basa en paginación: la memoria se divide en "páginas" pequeñas. Si la RAM física se llena, el
             núcleo mueve páginas de memoria menos utilizadas al espacio swap (disco), liberando RAM para procesos
@@ -86,14 +86,14 @@
           </p>
         </div>
         <div class="col">
-          Gestión del Núcleo:
+          <h4> Gestión del Núcleo:</h4>
           <p class="text-start">
             Utiliza funciones como kmalloc() para asignar memoria física de manera eficiente, minimizando la
             fragmentación.
           </p>
         </div>
         <div class="col">
-          Monitoreo:
+          <h4>Monitoreo:</h4>
           <p class="text-start">
             Se puede visualizar la gestión de memoria usando comandos como free -h (para ver memoria libre, usada y en
             búfer) o top/htop para ver el uso en tiempo real.
