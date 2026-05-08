@@ -10,7 +10,7 @@
 </head>
 
 <body>
- <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Linux</a>
       <img src="assets/img/Inicio/linux_logo.webp" class="img-fluid" alt="logo" width="5%">
@@ -37,7 +37,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Gestion
             </a>
-            
+
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/gestion.html">Gestion de procesos</a></li>
               <li><a class="dropdown-item" href="/memoria.html">Gestion de memoria</a></li>
@@ -99,6 +99,33 @@
             Se puede visualizar la gestión de memoria usando comandos como free -h (para ver memoria libre, usada y en
             búfer) o top/htop para ver el uso en tiempo real.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr style="border: none; margin: 40px 0;"> <!-- Espacio invisible -->
+  <section id="modal" class="container">
+    <div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Vea imagen ilustrativa....
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Memoria Ram</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="/assets/img/memoria/g memoria.webp" alt="" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
