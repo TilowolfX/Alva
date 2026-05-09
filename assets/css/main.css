@@ -1,8 +1,8 @@
 :root{
     --bg-primary-blue:#0D384B;
-    --secundary-color:#005f73
-    --color-light: #e5e5e5
-    
+    --secundary-color:#005f73;
+    --color-light: #e5e5e5;
+    --color-gray: #2b3035;
 }
 
 .color-light{
@@ -29,6 +29,10 @@
     height: 480px;
 }
 
+.card-gray{
+    background-color: var(--color-gray);
+    color: var(--color-light);
+}
 
 
     
