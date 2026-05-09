@@ -6,6 +6,7 @@
   <title>Seguridad de sistema</title>
   <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
  <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -52,7 +53,7 @@
     </div>
   </nav>
   <div class="text-center">
-    <h1><img src="assets/img/Seguridad/icono-seguridad.webp" alt="">Seguridad y Privilegios</h1>
+    <h1 class="text-center fs-1 mt-5"><i class="fa-solid fa-shield me-2" style="color: rgb(116, 192, 252);"></i>Seguridad y Privilegios</h1>
     <p>El poder de Root y la responsabilidad del usuario.</p>
   </div>
 
@@ -61,13 +62,14 @@
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <h4>¿Qué es sudo?</h4>
+            <h4><strong>¿Qué es sudo?</strong></h4>
             <p>Sudo (Super user Do) permite a un usuario normal ejecutar comandos con los privilegios del superusuario (root). Es la barrera de seguridad que evita que borres el sistema por error. </p>
             <p><img src="assets/img/Seguridad/icono-lista.webp" alt="">Siempre pide tu contraseña personal</p>
             <p><img src="assets/img/Seguridad/icono-lista.webp" alt="">Registra cada acción en logs</p>
-          </div>
+            <p>En Linux, el control de usuarios y permisos de archivos permite proteger la información y administrar el acceso a los recursos del sistema. Cada archivo y directorio tiene un propietario y permisos definidos para tres tipos de usuarios: propietario, grupo y otros usuarios. Los permisos básicos son lectura (r), escritura (w) y ejecución (x), los cuales determinan quién puede ver, modificar o ejecutar un archivo. Linux utiliza este sistema de seguridad para evitar accesos no autorizados y mantener la integridad del sistema.</p>
           <div class="col">
             <img src="assets/img/Seguridad/esquema-seguridad.webp" alt="">
+          </div>
           </div>
         </div>
       </div>
