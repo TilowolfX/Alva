@@ -1,7 +1,12 @@
 :root{
     --bg-primary-blue:#0D384B;
     --secundary-color:#005f73
+    --color-light: #e5e5e5
     
+}
+
+.color-light{
+    background-color: #e5e5e5;
 }
 
 .bg-primary-blue{
@@ -23,7 +28,8 @@
     max-width: 1320px;
     height: 480px;
 }
-   
+
+
 
 
 
