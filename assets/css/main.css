@@ -34,6 +34,16 @@
     color: var(--color-light);
 }
 
+#topbar h1{
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+
+    
+
+
 
 
 
