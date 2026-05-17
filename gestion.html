@@ -11,7 +11,7 @@
 </head>
 
 <body>
- <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-info" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Linux</a>
       <img src="assets/img/Inicio/linux_logo.webp" class="img-fluid" alt="logo" width="5%">
@@ -38,10 +38,10 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Gestion
             </a>
-            
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/gestion.html">Gestion de procesos</a></li>
               <li><a class="dropdown-item" href="/memoria.html">Gestion de memoria</a></li>
+              <li><a class="dropdown-item" href="/control.html">Control de dispositivos</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -54,74 +54,159 @@
       </div>
     </div>
   </nav>
-  <h1 class="text-center fs-1 mt-5"><i class="fa-solid fa-gears me-2" style="color: #219ebc;"></i><strong>Gestión de procesos.</strong></h1>
-  <section id="gestion" class="container">
+  <h1 class="text-center fs-1 mt-5"><i class="fa-solid fa-gears me-2" style="color: #219ebc;"></i><strong>Gestión de
+      procesos.</strong></h1>
+  <!-- <section id="gestion" class="container section-spacio">
     <div>
-      <p class="fs-4 mt-5">Como Linux hace mil cosas a la vez.</p>
+      <h2 class="fs-4 mt-5 h2">Como Linux hace mil cosas a la vez.</h2>
+      <br>
       <div class="row">
-        <div class="col mt-5">
-          <div class="card color-light" style="width: 40rem;">
-
+        <div class="col-sm-12 col-md-6">
+          <div class="card color-light">
             <div class="card-body">
               <h5 class="card-title">
-              <div class="spinner-border me-2" style="color: #219ebc;" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div><strong>Procesando</strong></h5>
+                <div class="spinner-border me-2" style="color: #219ebc;" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div><strong>Procesando</strong>
+              </h5>
               <p class="card-text">Un **Proceso** es simplemente un programa en ejecucion. Cada procesos tiene un ID
                 único llamado **PID**.</p>
-              <img src="/assets/img/gestion/gestionprocesos1.webp" class="card-img-top" alt="...">
+              <img src="/assets/img/gestion/gestionprocesos1.webp" class="card-img-top img-fluid" alt="...">
             </div>
           </div>
-
-         <div class="col mt-5">
-           <div class="card color-light" style="width: 40rem;">
-            <div class="card-body">
-              <h5 class="card-title"><strong>¿Qué es una multitarea?</strong></h5>
-              <p class="card-text">Se refiere a la capacidad de un sistema para ejecutar múltiples procesos o tareas de forma simultánea o aparentemente simultánea. Esta funcionalidad es el corazón de la experiencia de usuario moderna, permitiéndonos realizar varias actividades al mismo tiempo en nuestros dispositivos.</p>
-              <img src="assets/img/gestion/multitarea.webp" class="card-img-top" alt="...">
+          <br>
+          <div class="col-sm-12 col-md-6">
+            <div class="card color-light">
+              <div class="card-body">
+                <h5 class="card-title"><strong>¿Qué es una multitarea?</strong></h5>
+                <p class="card-text">Se refiere a la capacidad de un sistema para ejecutar múltiples procesos o tareas
+                  de forma simultánea o aparentemente simultánea. Esta funcionalidad es el corazón de la experiencia de
+                  usuario moderna, permitiéndonos realizar varias actividades al mismo tiempo en nuestros dispositivos.
+                </p>
+                <img src="assets/img/gestion/multitarea.webp" class="card-img-top img-fluid" alt="...">
+              </div>
             </div>
           </div>
-         </div>
-
-         <div class="col mt-5 mb-5">
-           <div class="card color-light" style="width: 40rem;">
-            <div class="card-body">
-              <h5 class="card-title"><strong>¿Comó ejecuta varios programas al mismo tiempo?</strong></h5>
-              <p class="card-text">Linux ejecuta varios programas simultáneamente mediante la multitarea preventiva, donde el núcleo (kernel) asigna fracciones de tiempo del procesador (CPU) a cada programa de forma intercalada administrando la memoria y los recursos de manera eficiente. El planificador del sistema operativo cambia rápidamente entre procesos, dando la impresión de una ejecución paralela en tiempo real.</p>
-              
-               <p class="text-center">
-                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                   Ver Ejemplo
-                 </button>
-               </p>
-               <div style="min-height: 120px;">
-                 <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                   <div class="card card-body" style="width: 600px;">
-                     <img src="assets/img/gestion/image.png" class="img-fluid" alt="...">
-                   </div>
-                 </div>
-               </div>
-
+          <br>
+          <div class="col-sm-12 col-md-6">
+            <div class="card color-light">
+              <div class="card-body">
+                <h5 class="card-title"><strong>¿Comó ejecuta varios programas al mismo tiempo?</strong></h5>
+                <p class="card-text">Linux ejecuta varios programas simultáneamente mediante la multitarea preventiva,
+                  donde el núcleo (kernel) asigna fracciones de tiempo del procesador (CPU) a cada programa de forma
+                  intercalada administrando la memoria y los recursos de manera eficiente. El planificador del sistema
+                  operativo cambia rápidamente entre procesos, dando la impresión de una ejecución paralela en tiempo
+                  real.</p>
+                <p class="text-center">
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    Ver Ejemplo
+                  </button>
+                </p>
+                <div style="min-height: 120px;">
+                  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body" style="width:auto">
+                      <img src="assets/img/gestion/image.png" class="img-fluid" alt="...">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-         </div>
-
-        </div>
-        <div class="col">
-          <img src="/assets/img/gestion/gestionprocesos2.webp" alt="">
-          <img src="/assets/img/gestion/gestionprocesos3.webp" alt="">
         </div>
       </div>
     </div>
+  </section> -->
 
+  <section id="gestion" class="container section-spacio">
+    <div>
+      <h2 class="fs-4 mt-5 h2">Cómo Linux hace mil cosas a la vez.</h2>
+      <div class="row g-4 mt-2">
+        <!-- CARD 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card color-light h-100">
+            <div class="card-body">
+              <h5 class="card-title d-flex align-items-center">
+                <div class="spinner-border me-2" style="color: #219ebc;" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <strong>Procesando</strong>
+              </h5>
+              <p class="card-text">
+                Un <strong>proceso</strong> es simplemente un programa en ejecución.
+                Cada proceso tiene un ID único llamado <strong>PID</strong>.
+              </p>
+              <img src="/assets/img/gestion/gestionprocesos1.webp" class="card-img-top img-fluid rounded"
+                alt="Procesos en Linux">
+            </div>
+          </div>
+        </div>
+        <!-- CARD 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card color-light h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong>¿Qué es la multitarea?</strong>
+              </h5>
+              <p class="card-text">
+                Se refiere a la capacidad de un sistema para ejecutar múltiples
+                procesos o tareas de forma simultánea o aparentemente simultánea.
+                Esta funcionalidad es el corazón de la experiencia moderna,
+                permitiéndonos realizar varias actividades al mismo tiempo.
+              </p>
+              <img src="/assets/img/gestion/multitarea.webp" class="card-img-top img-fluid rounded"
+                alt="Multitarea en Linux">
+            </div>
+          </div>
+        </div>
+        <!-- CARD 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card color-light h-100">
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong>¿Cómo ejecuta varios programas al mismo tiempo?</strong>
+              </h5>
+              <p class="card-text">
+                Linux ejecuta varios programas simultáneamente mediante la
+                multitarea preventiva, donde el núcleo (kernel) asigna
+                fracciones de tiempo del procesador (CPU) a cada programa
+                de forma intercalada, administrando la memoria y los recursos
+                de manera eficiente. El planificador del sistema operativo
+                cambia rápidamente entre procesos, dando la impresión de
+                una ejecución paralela en tiempo real.
+              </p>
+              <p class="text-center">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Ver Ejemplo
+                </button>
+              </p>
+              <div class="collapse mt-3" id="collapseWidthExample">
+                <div class="card card-body">
+                  <img src="/assets/img/gestion/image.png" class="img-fluid rounded" alt="Ejemplo de multitarea">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="imagenes" class="container section-spacio">
+    <div class="row g-4 mt-2">
+      <!-- Imagen izquierda -->
+      <div class="col-12 col-md-6">
+        <img src="/assets/img/gestion/gestionprocesos2.webp" class="img-fluid w-100 rounded"
+          alt="Gestión de procesos Linux 1">
+      </div>
+      <!-- Imagen derecha -->
+      <div class="col-12 col-md-6">
+        <img src="/assets/img/gestion/gestionprocesos3.webp" class="img-fluid w-100 rounded"
+          alt="Gestión de procesos Linux 2">
+      </div>
+    </div>
   </section>
   <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
-
-
-
-
-
-
 
 </html>

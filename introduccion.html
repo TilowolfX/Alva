@@ -8,180 +8,179 @@
   <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-<nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Linux</a>
-    <img src="assets/img/Inicio/linux_logo.webp" class="img-fluid" alt="logo" width="5%">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Introduccion
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/introduccion.html">Introduccion sl sistema operativo</a></li>
-            <li><a class="dropdown-item" href="/arquitectura.html">Arquitectura del sistema operativo</a></li>
-            <li><a class="dropdown-item" href="/archivos.html">Sistema de archivos</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Gestion
-          </a>
-
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/gestion.html">Gestion de procesos</a></li>
-            <li><a class="dropdown-item" href="/memoria.html">Gestion de memoria</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/seguridad.html">Seguridad del sistema</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/comparacion.html">Comparacion con otros SO</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<section id="introcccion" class="container">
-  <h1> <img src="/assets/img/introduccion/Icono introduccion.jpg" alt="Icono" width="150" height="150">Introducción al
-    sistema operativo</h1>
-  <h6>¿Qué es linux y por que todo el mundo habla de el?</h6>
-  <p>
-    Linux no es solo un sistema operativo; es el motor que mueve internet, supercomputadoras y casi todos los
-    servidores
-    del planeta. A diferencia de Windows o MacOs, Linux es de "Código abierto", lo que significa que cualquiera puede
-    verlo, modificarlo y mejorarlo.
-  </p>
-  <div class="row-cols-2 justify-content-center align-items-center g-2">
-    <div class="col">
-      <div class="card">
-        <div class="card-header">
-          El kernel
-        </div>
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="card-text">El corazon del sistema que gestiona el hardware.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <div class="card-header">
-          Distribucion (Distro)
-        </div>
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="card-text">El kernel + Herramientas + Entorno Grafico (Ej.: Debian, Ubuntu).</p>
-        </div>
-      </div>
-    </div>
-    <img src="/assets/img/introduccion/tr kernel.webp" alt="">
-  </div>
-</section>
-<section id="funcion" class="container">
-  <h2>¿Cual es la funcion de linux?</h2>
-  <div class="container-fluid text-center">
-    <div class="container-fluid text-center">
-      <div class="row g-3">
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="card shadow rounded-3">
-            <div class="card-body">
-              <h5 class="card-title">Gestión de Hardware y Recursos:</h5>
-              <p class="card-text">El núcleo (kernel) administra la CPU, la memoria RAM y los dispositivos periféricos
-                (Wi-Fi, Bluetooth,
-                impresoras, tarjetas gráficas).</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="card shadow rounded-3">
-            <div class="card-body">
-              <h5 class="card-title">Multiusuario y Multitarea:</h5>
-              <p class="card-text">Permite que varios usuarios ejecuten múltiples tareas simultáneamente, lo que lo
-                hace ideal para
-                servidores y entornos compartidos.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="card shadow rounded-3">
-            <div class="card-body card-gray">
-              <h5 class="card-title">Gestión de Archivos y Permisos: </h5>
-              <p class="card-text">Proporciona un sistema jerárquico de archivos con seguridad estricta para controlar
-                el acceso a los
-                datos.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="card shadow rounded-3">
-            <div class="card-body card-gray">
-              <h5 class="card-title">Seguridad y Estabilidad:</h5>
-              <p class="card-text">Gracias a su diseño, es menos vulnerable a malware y virus, ofreciendo una
-                plataforma robusta.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="card shadow rounded-3">
-            <div class="card-body card-gray">
-              <h5 class="card-title">Automatización y Redes: </h5>
-              <p class="card-text">Facilita la automatización de tareas y posee capacidades nativas para la gestión de
-                redes de datos.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="card shadow rounded-3">
-            <div class="card-body card-gray">
-              <h5 class="card-title">Flexibilidad y Personalización: </h5>
-              <p class="card-text">Al ser código abierto, permite modificar la interfaz y las funcionalidades para
-                adaptarse a necesidades
-                específicas.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="dispositivos" class="container">
-    <h2>¿Que dispositivos utilizan Linux?</h2>
-  <div class="row">
-    <div class="col-lg-8">
-      </div>
-    <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-3 card bg-dark text-light">
-        <ul class="py-3">
-          <li>Steam Deck</li>
-          <li>Router</li>
-          <li>Portatiles</li>
-          <li>Servidores</li>
-          <li>Drones</li>
-          <li>Televisores</li>
-          <li>Dispositivos Medicos</li>
+  <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-info" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Linux</a>
+      <img src="assets/img/Inicio/linux_logo.webp" class="img-fluid" alt="logo" width="5%">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Introduccion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/introduccion.html">Introduccion sl sistema operativo</a></li>
+              <li><a class="dropdown-item" href="/arquitectura.html">Arquitectura del sistema operativo</a></li>
+              <li><a class="dropdown-item" href="/archivos.html">Sistema de archivos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gestion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/gestion.html">Gestion de procesos</a></li>
+              <li><a class="dropdown-item" href="/memoria.html">Gestion de memoria</a></li>
+              <li><a class="dropdown-item" href="/control.html">Control de dispositivos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/seguridad.html">Seguridad del sistema</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/comparacion.html">Comparacion con otros SO</a>
+          </li>
         </ul>
       </div>
-      <div class="col-6">
-          <img src="/assets/img/introduccion/Dispositivos.webp" alt="dispositivos" class="img-fluid w-md-75 w-lg-50">
+    </div>
+  </nav>
+  <section id="introcccion" class="container section-spacio">
+    <h1 class="text-center fs-1 mt-5"> <i class="fa-solid fa-book-open me-2" style="color: rgb(116, 192, 252);"></i> Introducción al sistema operativo</h1>
+    <br>
+    <h2 class="text-center">¿Qué es linux y por que todo el mundo habla de el?</h2>
+    <br>
+    <p>
+      Linux no es solo un sistema operativo; es el motor que mueve internet, supercomputadoras y casi todos los
+      servidores
+      del planeta. A diferencia de Windows o MacOs, Linux es de "Código abierto", lo que significa que cualquiera puede
+      verlo, modificarlo y mejorarlo.
+    </p>
+    <div class="row-cols-2 justify-content-center align-items-center g-2">
+      <div class="col-sm-12 col-md-6">
+        <div class="card border-info">
+          <div class="card-header">
+            El Kernel
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">El corazón del sistema que gestiona el hardware.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="card border-info">
+          <div class="card-header">
+            Distribucion (Distro)
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">El kernel + Herramientas + Entorno Grafico (Ej.: Debian, Ubuntu).</p>
+          </div>
+        </div>
       </div>
     </div>
-
-  </div>
-
-</section>
+    <img src="/assets/img/introduccion/tr kernel.webp" alt="" class="img-fluid">
+  </section>
+  <section id="funcion" class="container section-spacio">
+    <h2 class="h2">¿Cual es la funcion de linux?</h2>
+    <br>
+    <div class="container-fluid text-center">
+      <div class="container-fluid text-center">
+        <div class="row g-3">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card shadow rounded-3">
+              <div class="card-body card-gray">
+                <h5 class="card-title">Gestión de Hardware y Recursos:</h5>
+                <p class="card-text">El núcleo (kernel) administra la CPU, la memoria RAM y los dispositivos periféricos
+                  (Wi-Fi, Bluetooth,
+                  impresoras, tarjetas gráficas).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card shadow rounded-3">
+              <div class="card-body card-gray">
+                <h5 class="card-title">Multiusuario y Multitarea:</h5>
+                <p class="card-text">Permite que varios usuarios ejecuten múltiples tareas simultáneamente, lo que lo
+                  hace ideal para
+                  servidores y entornos compartidos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card shadow rounded-3">
+              <div class="card-body card-gray">
+                <h5 class="card-title">Gestión de Archivos y Permisos: </h5>
+                <p class="card-text">Proporciona un sistema jerárquico de archivos con seguridad estricta para controlar
+                  el acceso a los
+                  datos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card shadow rounded-3">
+              <div class="card-body card-gray">
+                <h5 class="card-title">Seguridad y Estabilidad:</h5>
+                <p class="card-text">Gracias a su diseño, es menos vulnerable a malware y virus, ofreciendo una
+                  plataforma robusta.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card shadow rounded-3">
+              <div class="card-body card-gray">
+                <h5 class="card-title">Automatización y Redes: </h5>
+                <p class="card-text">Facilita la automatización de tareas y posee capacidades nativas para la gestión de
+                  redes de datos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card shadow rounded-3">
+              <div class="card-body card-gray">
+                <h5 class="card-title">Flexibilidad y Personalización: </h5>
+                <p class="card-text">Al ser código abierto, permite modificar la interfaz y las funcionalidades para
+                  adaptarse a necesidades
+                  específicas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="dispositivos" class="container section-spacio">
+    <h2 class="h2">¿Que dispositivos utilizan Linux?</h2>
+    <div class="row">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-sm-12 col-md-6 card bg-dark text-light">
+          <ul class="py-3">
+            <li>Steam Deck</li>
+            <li>Router</li>
+            <li>Portatiles</li>
+            <li>Servidores</li>
+            <li>Drones</li>
+            <li>Televisores</li>
+            <li>Dispositivos Medicos</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img src="/assets/img/introduccion/Dispositivos.webp" alt="dispositivos" class="img-fluid w-md-75 w-lg-50">
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 

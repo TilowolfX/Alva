@@ -11,7 +11,7 @@
 </head>
 
 <body>
-   <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+   <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-info" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Linux</a>
       <img src="assets/img/Inicio/linux_logo.webp" class="img-fluid" alt="logo" width="5%">
@@ -38,10 +38,10 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Gestion
             </a>
-            
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/gestion.html">Gestion de procesos</a></li>
               <li><a class="dropdown-item" href="/memoria.html">Gestion de memoria</a></li>
+              <li><a class="dropdown-item" href="/control.html">Control de dispositivos</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -54,48 +54,53 @@
       </div>
     </div>
   </nav>
-  <h1 class="text-center fs-1 mt-5"><i class="fa-solid fa-cubes-stacked me-2" style="color: #219ebc;"></i><strong>Arquitectura del sistema</strong></h1>
-
-  <section id="arquitectura" class="container mt-5">
+  <h1 class="text-center fs-1 mt-5"><i class="fa-solid fa-cubes-stacked me-2"
+      style="color: #219ebc;"></i><strong>Arquitectura del sistema</strong></h1>
+  <section id="arquitectura" class="container section-spacio">
     <div>
       <p>Las capas que seperan tus programas del hardware real.</p>
       <p>Linux organiza el software en dos mundos principales para garantizar la seguridad y estabilidad.</p>
-      <p><i class="fa-solid fa-angle-left fa-rotate-180 me-2 p-2 rounded-circle" style="color: #219; background-color: rgb(116, 192, 252);"></i>User Space: Donde viven tus aplicaciones
+      <p><i class="fa-solid fa-angle-left fa-rotate-180 me-2 p-2 rounded-circle"
+          style="color: #219; background-color: rgb(116, 192, 252);"></i>User Space: Donde viven tus aplicaciones
         (Navegador, Terminal,Juegos,Wps office). Tienen acceso limitado por seguridad</p>
-      <p><i class="fa-solid fa-angle-left fa-rotate-180 me-2 p-2 rounded-circle" style="color: #219; background-color: rgb(116, 192, 252);"></i>Kernel Space: Donde vive el nucleo. Tiene el control total
+      <p><i class="fa-solid fa-angle-left fa-rotate-180 me-2 p-2 rounded-circle"
+          style="color: #219; background-color: rgb(116, 192, 252);"></i>Kernel Space: Donde vive el nucleo. Tiene el
+        control total
         sobre la CPU, la Ram y los discos.</p>
-
-        <div class="container">
-          <div class="row">
-            <div class="col mt-5">
-              <div class="card">
-                <div class="card-header color-light fs-4" style="height: 5rem;">
-                  <strong>¿Comó interactuan las aplicaciones con el sistema operativo?</strong>
-                </div>
-                <div class="card-body" style="height: 18rem;"">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="card">
+              <div class="card-header color-light fs-4" style="height: 5rem;">
+                <strong>¿Comó interactuan las aplicaciones con el sistema operativo?</strong>
+              </div>
+              <div class="card-body" style="height: 18rem;"">
                   <p>Las aplicaciones interactúan con el sistema operativo mediante llamadas al sistema (system calls), que son funciones que permiten solicitar servicios al núcleo del sistema operativo. A través de estas llamadas, las aplicaciones pueden acceder a recursos como memoria, archivos, dispositivos de hardware, red y procesamiento. El sistema operativo actúa como intermediario, administrando y controlando los recursos para garantizar que los programas funcionen de manera segura y eficiente sin acceder directamente al hardware.</p>
                 </div>
               </div>
             </div>
-          <div class="col mt-5">
-              <div class="card">
-                <div class="card-header color-light fs-4" style="height: 5rem;">
-                  <strong>Relación entre el hardware y el software</strong>
-                </div>
-                <div class="card-body" style="height: 18rem;">
-                  <p>En Linux, la relación entre el hardware y el software se realiza a través del kernel, que actúa como intermediario entre ambos. El hardware incluye los componentes físicos de la computadora, como el procesador, memoria, disco y dispositivos de entrada o salida, mientras que el software son los programas y aplicaciones que utiliza el usuario. Linux permite que el software se comunique con el hardware mediante controladores (drivers), administrando recursos como la memoria, la CPU y los dispositivos para que el sistema funcione correctamente y de manera eficiente.</p>
+          <div class=" col-sm-12 col-md-6">
+                <div class="card">
+                  <div class="card-header color-light fs-4" style="height: 5rem;">
+                    <strong>Relación entre el hardware y el software</strong>
+                  </div>
+                  <div class="card-body" style="height: 18rem;">
+                    <p>En Linux, la relación entre el hardware y el software se realiza a través del kernel, que actúa
+                      como intermediario entre ambos. El hardware incluye los componentes físicos de la computadora,
+                      como el procesador, memoria, disco y dispositivos de entrada o salida, mientras que el software
+                      son los programas y aplicaciones que utiliza el usuario. Linux permite que el software se
+                      comunique con el hardware mediante controladores (drivers), administrando recursos como la
+                      memoria, la CPU y los dispositivos para que el sistema funcione correctamente y de manera
+                      eficiente.</p>
+                  </div>
                 </div>
               </div>
+              <img src="/assets/img/arquitectura/Arquitecturadelsistema.webp" class="card-img-top img-fluid" alt="">
             </div>
-              <img src="/assets/img/arquitectura/Arquitecturadelsistema.webp" class="card-img-top" alt="">
           </div>
         </div>
-    </div>
   </section>
-
-
   <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>

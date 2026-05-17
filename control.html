@@ -7,10 +7,11 @@
   <title>Control de dispositivos</title>
   <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-  <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-info" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Linux</a>
       <img src="assets/img/Inicio/linux_logo.webp" class="img-fluid" alt="logo" width="5%">
@@ -37,10 +38,10 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Gestion
             </a>
-
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/gestion.html">Gestion de procesos</a></li>
               <li><a class="dropdown-item" href="/memoria.html">Gestion de memoria</a></li>
+              <li><a class="dropdown-item" href="/control.html">Control de dispositivos</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -53,14 +54,16 @@
       </div>
     </div>
   </nav>
-  <h1> <img src="/assets/img/Control/icocontrol.png" alt="">Control de dispositivos</h1>
-  <p>La gestión de periféricos y componentes internos es fundamental en cuaquier sisteme operativo. Aprende cómo el
-    kernel interactúa con el hardware a través de controladores y archivos de dispositivos especiales.</p>
-  <section id="Control" class="container">
+  <h1 class="text-center"><i class="fa-brands fa-whmcs me-2" style="color: rgb(116, 192, 252);"></i> Control de
+    dispositivos</h1>
+  <h2 class="text-center">La gestión de periféricos y componentes internos es fundamental en cuaquier sisteme operativo.
+    Aprende cómo el
+    kernel interactúa con el hardware a través de controladores y archivos de dispositivos especiales.</h2>
+  <section id="Control" class="container section-spacio">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <h3><img src="/assets/img/Control/icodrivers.jpg" alt="">Driver (Controladores) </h3>
+        <div class="col-sm-12 col-md-6">
+          <h3><i class="fa-brands fa-usb me-2" style="color: rgb(116, 192, 252);"></i> (Controladores) </h3>
           <p>Los controladores actúan como traductores entre el sistema operativo y el hardware. Sin ellos el kernel no
             sabría cómo enviar comandos especificos a una impresora o tarjeta grafica. En sistemas modernos, muchos
             vienen integrados directamente.</p>
@@ -98,7 +101,7 @@
           <h3>>_ Ejemplos de comandos</h3>
           <div class="container">
             <div class="row">
-              <div class="col">
+              <div class="col-sm-12 col-md-6">
                 <div class="card" style="width: 18rem;">
                   <div class="card-body">
                     <h5 class="card-title">Listar dispositivos usb</h5>
@@ -106,7 +109,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-sm-12 col-md-6">
                 <div class="card" style="width: 18rem;">
                   <div class="card-body">
                     <h5 class="card-title">Ver dispositivos de bloque</h5>
@@ -116,7 +119,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-sm-12 col-md-6">
                 <div class="card" style="width: 18rem;">
                   <div class="card-body">
                     <h5 class="card-title">Informacion del kernel</h5>
@@ -124,7 +127,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-sm-12 col-md-6">
                 <div class="card" style="width: 18rem;">
                   <div class="card-body">
                     <h5 class="card-title">Listar buses PCI</h5>
@@ -135,9 +138,8 @@
             </div>
           </div>
         </div>
-
-        <div class="col">
-          <img src="/assets/img/Control/imagen controldispositivo.webp" alt="">
+        <div class="col-sm-12 col-md-6">
+          <img src="/assets/img/Control/imagen controldispositivo.webp" alt="" class="img-fluid">
         </div>
         <h3>Regla udev personalizada</h3>
         <p>Ejemplo para montar automaticamente un disco espesifico:</p>
@@ -154,9 +156,14 @@
             <p class="card-text"><!-- Button trigger modal -->
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Ver imagen 2.0
-              </button>
-
-              <!-- Modal -->
+              </button>           
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+     <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog modal-xl">
@@ -175,12 +182,6 @@
                 </div>
               </div>
             </div>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 

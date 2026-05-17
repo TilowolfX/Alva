@@ -4,6 +4,10 @@
     --color-light: #e5e5e5;
     --color-gray: #2b3035;
 }
+.section-spacio{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 .color-light{
     background-color: #e5e5e5;
@@ -27,6 +31,9 @@
 #cards .card{
     max-width: 1320px;
     height: 480px;
+}
+.h2 {
+    text-align: center;
 }
 
 .card-gray{

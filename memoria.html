@@ -7,10 +7,11 @@
   <title>Gestion de memoria</title>
   <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-  <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar bg-primary border-bottom border-body navbar-expand-lg bg-body-info" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Linux</a>
       <img src="assets/img/Inicio/linux_logo.webp" class="img-fluid" alt="logo" width="5%">
@@ -37,10 +38,10 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Gestion
             </a>
-
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/gestion.html">Gestion de procesos</a></li>
               <li><a class="dropdown-item" href="/memoria.html">Gestion de memoria</a></li>
+              <li><a class="dropdown-item" href="/control.html">Control de dispositivos</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -53,32 +54,57 @@
       </div>
     </div>
   </nav>
-  <h1><img src="/assets/img/memoria/imgramico.webp" alt="">Gestión de Memoria RAM</h1>
-  <section id="memoria" class="container">
+  <h1 class="text-center"> <i class="fa-solid fa-database me-2" style="color: rgb(116, 192, 252);"></i> Gestión de
+    Memoria RAM</h1>
+  <!-- <section id="memoria" class="container-fluid section-spacio">
     <h4>RAM Física vs Virtual: El juego de malabares de Linux. </h4>
     <div class="row">
-      <div class="col-4">
+      <div class="col-sm-12 col-md-6">
         <h5>¿Qué es el SWAP?</h5>
         <p>Es un espacio en el disco duro que Linux usa como "Extension" cuando la memoria RAM física está llena. Es
           mucho mas lenta, pero evita que el sistema se cuelgue.</p>
       </div>
-      <div class="col-8">
-        <img src="/assets/img/memoria/gestionram.webp" alt="">
+      <div class="col-sm-12 col-md-6">
+        <img src="/assets/img/memoria/gestionram.webp" class="img-fluid" alt="">
+        <img src="/assets/img/memoria/gestionram1.webp" class="img-fluid" alt="">
       </div>
     </div>
-    <img src="/assets/img/memoria/gestionram1.webp" alt="">
+  </section> -->
+  <section id="memoria" class="container-fluid section-spacio">
+    <h4 class="text-center">RAM Física vs Virtual: El juego de malabares de Linux. </h4>
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-md-6">
+        <h5>¿Qué es el SWAP?</h5>
+        <p>
+          Es un espacio en el disco duro que Linux usa como una
+          <strong>"extensión"</strong> cuando la memoria RAM física
+          está llena. Es mucho más lenta, pero evita que el sistema
+          se cuelgue.
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <img src="/assets/img/memoria/gestionram.webp" class="img-fluid w-100 rounded" alt="Gestión RAM Linux">
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="/assets/img/memoria/gestionram1.webp" class="img-fluid w-100 rounded" alt="Memoria SWAP Linux">
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section id="memoria" class="container-fluid">
+  <section id="memoria" class="container-fluid section-spacio">
     <div class="container-fluid text-center">
       <div class="row">
-        <div class="col">
+        <div class="col-sm-12 col-md-6">
           <h4>Memoria Virtual y Caché:</h4>
           <p class="text-start">
             Linux utiliza todo el espacio RAM disponible. Si hay RAM libre, la usa para caché (buffer/cache) para
             acelerar la lectura de archivos. Esta caché se libera inmediatamente si un programa necesita RAM física.
           </p>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-6">
           <h4>Paginación y Intercambio (Swap):</h4>
           <p class="text-start">
             La gestión se basa en paginación: la memoria se divide en "páginas" pequeñas. Si la RAM física se llena, el
@@ -86,14 +112,14 @@
             activos.
           </p>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-6">
           <h4> Gestión del Núcleo:</h4>
           <p class="text-start">
             Utiliza funciones como kmalloc() para asignar memoria física de manera eficiente, minimizando la
             fragmentación.
           </p>
         </div>
-        <div class="col">
+        <div class="col-sm-12 col-md-6">
           <h4>Monitoreo:</h4>
           <p class="text-start">
             Se puede visualizar la gestión de memoria usando comandos como free -h (para ver memoria libre, usada y en
@@ -103,33 +129,32 @@
       </div>
     </div>
   </section>
-  <hr style="border: none; margin: 40px 0;"> <!-- Espacio invisible -->
-  <section id="modal" class="container">
-    <div>
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Vea imagen ilustrativa....
+  <hr style="border: none; margin: 0px 0;"> <!-- Espacio invisible -->
+  <section id="modal" class="container section-spacio">
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-primary px-4 py-2 shadow-lg" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Vea imagen ilustrativa...
       </button>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Memoria Ram</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="/assets/img/memoria/g memoria.webp" alt="" class="img-fluid">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
+    </div>
+  </section>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Memoria Ram</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/assets/img/memoria/g memoria.webp" alt="" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
